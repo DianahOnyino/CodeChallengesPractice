@@ -21,6 +21,7 @@ function duplicateCount($text) {
             $count += 1;
         } 
     }
+
     return $count;
 }
 
