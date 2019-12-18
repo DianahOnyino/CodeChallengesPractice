@@ -17,6 +17,11 @@ class Solution
 {
     function findKthLargest($nums, $k)
     {
+        //Simpler solution
+        // rsort($nums);
+        // return $nums[$k - 1];
+
+        //Get the largest element in array and its key
         list($max, $max_key) = $this->getNextMax($nums);
 
         while ($k > 1) {
